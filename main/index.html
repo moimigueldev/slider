@@ -11,14 +11,28 @@
 
 <body>
     <div class="slider-container">
-        <div class="main">
-            <input type="range" min="0" max="100" value="50" id="slider">
-            <div id="selector">
-                <div class="select-hover"></div>
-                <div id="selectValue"></div>
+        <section class="range-slider">
+
+            <div id="slider1-container">
+                <input value="50" min="0" max="100" step="1" type="range" id="slider-1">
+                <div id="selector">
+                    <div class="select-btn"></div>
+                    <div id="selectValue"></div>
+                </div>
+                <div id="progress-bar"></div>
             </div>
-            <div id="progress-bar"></div>
-        </div>
+
+
+            <div id="slider2-container">
+                <input value="100" min="0" max="100" step="1" type="range" id="slider-2">
+
+                <div id="selector-2">
+                    <div class="select-btn"></div>
+                    <div id="selectValue"></div>
+                </div>
+                <div id="progress-bar-2"></div>
+            </div>
+        </section>
 
     </div>
     <script src="script.js"></script>
