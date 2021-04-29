@@ -45,7 +45,9 @@ var progressBar2 = document.getElementById('progress-bar-2');
 progressBar2.style.width = 100 - slider2.value;
 
 slider1.addEventListener('input', function () {
-  // progressBar.style.width = this.value + '%';
+  if (this.value > 49) {
+    this.value = 49;
+  }
 
   const elementPosition = this.getBoundingClientRect();
 
@@ -53,7 +55,10 @@ slider1.addEventListener('input', function () {
 });
 
 slider2.addEventListener('input', function () {
-  // progressBar.style.width = this.value + '%';
+  console.log(this.value);
+  if (this.value < 40) {
+    this.value = 49;
+  }
 
   const elementPosition = this.getBoundingClientRect();
 
